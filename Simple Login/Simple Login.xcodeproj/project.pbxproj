@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1187567B241BD67D00789D68 /* mcqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187567A241BD67D00789D68 /* mcqViewController.swift */; };
+		1187567D241BD89600789D68 /* mcq.json in Resources */ = {isa = PBXBuildFile; fileRef = 1187567C241BD89600789D68 /* mcq.json */; };
 		4A16E5DA235DE21E004C91CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A16E5D9235DE21E004C91CD /* AppDelegate.swift */; };
 		4A16E5DC235DE21E004C91CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A16E5DB235DE21E004C91CD /* SceneDelegate.swift */; };
 		4A16E5DE235DE21E004C91CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A16E5DD235DE21E004C91CD /* ViewController.swift */; };
@@ -18,13 +20,19 @@
 		842B100423EB0838003093D1 /* ViewStaffController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B100323EB0838003093D1 /* ViewStaffController.swift */; };
 		842CE7FF23FE28400063C0D6 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842CE7FE23FE28400063C0D6 /* MenuViewController.swift */; };
 		842CE80123FE3AFB0063C0D6 /* questionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842CE80023FE3AFB0063C0D6 /* questionsViewController.swift */; };
+		846DE1BF2412BF52009CA31D /* askQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DE1BE2412BF52009CA31D /* askQuestionViewController.swift */; };
 		84746C202408047C0087C800 /* StaffQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84746C1F2408047C0087C800 /* StaffQViewController.swift */; };
-		84746C2224080BDF0087C800 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 84746C2124080BDF0087C800 /* questions.json */; };
-		84D15B8023DF4DAC008F961B /* Screenshot 2020-01-27 at 16.55.38.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D15B7F23DF4DAC008F961B /* Screenshot 2020-01-27 at 16.55.38.png */; };
+		84B6331D240E819800D3E145 /* Screenshot 2020-01-27 at 16.55.38.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B6331C240E819800D3E145 /* Screenshot 2020-01-27 at 16.55.38.png */; };
+		84F11D4E241416F600831967 /* lookanswersStaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F11D4D241416F600831967 /* lookanswersStaffViewController.swift */; };
+		84FC385A241552CE00655C0B /* postqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC3859241552CE00655C0B /* postqViewController.swift */; };
+		84FC38602415822600655C0B /* filequetionStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC385F2415822600655C0B /* filequetionStudent.swift */; };
+		84FC38622416B3BC00655C0B /* file.txt in Resources */ = {isa = PBXBuildFile; fileRef = 84FC38612416B3BC00655C0B /* file.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4A16E5D6235DE21E004C91CD /* Simple Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1187567A241BD67D00789D68 /* mcqViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mcqViewController.swift; sourceTree = "<group>"; };
+		1187567C241BD89600789D68 /* mcq.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mcq.json; sourceTree = "<group>"; };
+		4A16E5D6235DE21E004C91CD /* Nell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A16E5D9235DE21E004C91CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A16E5DB235DE21E004C91CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4A16E5DD235DE21E004C91CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,9 +45,13 @@
 		842B100323EB0838003093D1 /* ViewStaffController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStaffController.swift; sourceTree = "<group>"; };
 		842CE7FE23FE28400063C0D6 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		842CE80023FE3AFB0063C0D6 /* questionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questionsViewController.swift; sourceTree = "<group>"; };
+		846DE1BE2412BF52009CA31D /* askQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = askQuestionViewController.swift; sourceTree = "<group>"; };
 		84746C1F2408047C0087C800 /* StaffQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffQViewController.swift; sourceTree = "<group>"; };
-		84746C2124080BDF0087C800 /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
-		84D15B7F23DF4DAC008F961B /* Screenshot 2020-01-27 at 16.55.38.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot 2020-01-27 at 16.55.38.png"; path = "../../../../../../Desktop/Screenshot 2020-01-27 at 16.55.38.png"; sourceTree = "<group>"; };
+		84B6331C240E819800D3E145 /* Screenshot 2020-01-27 at 16.55.38.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2020-01-27 at 16.55.38.png"; sourceTree = "<group>"; };
+		84F11D4D241416F600831967 /* lookanswersStaffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lookanswersStaffViewController.swift; sourceTree = "<group>"; };
+		84FC3859241552CE00655C0B /* postqViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postqViewController.swift; sourceTree = "<group>"; };
+		84FC385F2415822600655C0B /* filequetionStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filequetionStudent.swift; sourceTree = "<group>"; };
+		84FC38612416B3BC00655C0B /* file.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = file.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +78,7 @@
 		4A16E5D7235DE21E004C91CD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4A16E5D6235DE21E004C91CD /* Simple Login.app */,
+				4A16E5D6235DE21E004C91CD /* Nell.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,19 +86,25 @@
 		4A16E5D8235DE21E004C91CD /* Simple Login */ = {
 			isa = PBXGroup;
 			children = (
+				1187567A241BD67D00789D68 /* mcqViewController.swift */,
+				84FC385F2415822600655C0B /* filequetionStudent.swift */,
 				4A16E5D9235DE21E004C91CD /* AppDelegate.swift */,
 				4A16E5DB235DE21E004C91CD /* SceneDelegate.swift */,
+				84B6331C240E819800D3E145 /* Screenshot 2020-01-27 at 16.55.38.png */,
 				4A16E5DD235DE21E004C91CD /* ViewController.swift */,
 				4A16E5DF235DE21E004C91CD /* Main.storyboard */,
+				84FC3859241552CE00655C0B /* postqViewController.swift */,
+				846DE1BE2412BF52009CA31D /* askQuestionViewController.swift */,
+				84F11D4D241416F600831967 /* lookanswersStaffViewController.swift */,
+				84746C1F2408047C0087C800 /* StaffQViewController.swift */,
 				842CE7FE23FE28400063C0D6 /* MenuViewController.swift */,
 				842CE80023FE3AFB0063C0D6 /* questionsViewController.swift */,
 				842B100323EB0838003093D1 /* ViewStaffController.swift */,
-				84746C2124080BDF0087C800 /* questions.json */,
-				84746C1F2408047C0087C800 /* StaffQViewController.swift */,
-				84D15B7F23DF4DAC008F961B /* Screenshot 2020-01-27 at 16.55.38.png */,
 				4A16E5E5235DE21F004C91CD /* Assets.xcassets */,
 				4A16E5EA235DE21F004C91CD /* Info.plist */,
 				4A16E5E2235DE21E004C91CD /* Simple_Login.xcdatamodeld */,
+				84FC38612416B3BC00655C0B /* file.txt */,
+				1187567C241BD89600789D68 /* mcq.json */,
 			);
 			path = "Simple Login";
 			sourceTree = "<group>";
@@ -108,7 +126,7 @@
 			);
 			name = "Simple Login";
 			productName = "Simple Login";
-			productReference = 4A16E5D6235DE21E004C91CD /* Simple Login.app */;
+			productReference = 4A16E5D6235DE21E004C91CD /* Nell.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -149,10 +167,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B6331D240E819800D3E145 /* Screenshot 2020-01-27 at 16.55.38.png in Resources */,
 				4A16E5E6235DE21F004C91CD /* Assets.xcassets in Resources */,
-				84746C2224080BDF0087C800 /* questions.json in Resources */,
+				84FC38622416B3BC00655C0B /* file.txt in Resources */,
+				1187567D241BD89600789D68 /* mcq.json in Resources */,
 				4A16E5E1235DE21E004C91CD /* Main.storyboard in Resources */,
-				84D15B8023DF4DAC008F961B /* Screenshot 2020-01-27 at 16.55.38.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,11 +186,16 @@
 				84746C202408047C0087C800 /* StaffQViewController.swift in Sources */,
 				4A16E5F2235DE4C4004C91CD /* Logins+CoreDataClass.swift in Sources */,
 				842B100423EB0838003093D1 /* ViewStaffController.swift in Sources */,
+				1187567B241BD67D00789D68 /* mcqViewController.swift in Sources */,
 				4A16E5DA235DE21E004C91CD /* AppDelegate.swift in Sources */,
 				4A16E5F3235DE4C4004C91CD /* Logins+CoreDataProperties.swift in Sources */,
+				84F11D4E241416F600831967 /* lookanswersStaffViewController.swift in Sources */,
+				846DE1BF2412BF52009CA31D /* askQuestionViewController.swift in Sources */,
 				4A16E5DC235DE21E004C91CD /* SceneDelegate.swift in Sources */,
+				84FC38602415822600655C0B /* filequetionStudent.swift in Sources */,
 				4A16E5E4235DE21E004C91CD /* Simple_Login.xcdatamodeld in Sources */,
 				842CE7FF23FE28400063C0D6 /* MenuViewController.swift in Sources */,
+				84FC385A241552CE00655C0B /* postqViewController.swift in Sources */,
 				842CE80123FE3AFB0063C0D6 /* questionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,16 +332,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development: vimal.solanki@hotmail.co.uk (WDQ2TN56CX)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Simple Login/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "anything.Simple-Login";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = project.Nell;
+				PRODUCT_NAME = Nell;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,16 +352,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development: vimal.solanki@hotmail.co.uk (WDQ2TN56CX)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Simple Login/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "anything.Simple-Login";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = project.Nell;
+				PRODUCT_NAME = Nell;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

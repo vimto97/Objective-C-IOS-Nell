@@ -1,36 +1,32 @@
 //
-//  questionsViewController.swift
+//  lookanswersStaffViewController.swift
 //  Simple Login
 //
-//  Created by Vimal Solanki on 20/02/2020.
+//  Created by Vimal Solanki on 07/03/2020.
 //
 
 import UIKit
 
-class questionsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class lookanswersStaffViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
- 
     @IBOutlet weak var myTable: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ask1.count
+        return ask2.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "myCell1")
-        cell.textLabel?.text = ask1[indexPath.row]
+        cell.textLabel?.text = ask2[indexPath.row]
         
         
         return cell
     }
     
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         myTable.reloadData()
-        print(ask1)
         // Do any additional setup after loading the view.
     }
     

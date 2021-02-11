@@ -24,6 +24,7 @@ class ViewStaffController: UIViewController {
     
     @IBOutlet weak var Abutton: UIButton!
     
+    @IBOutlet weak var postquestion: UIButton!
     @IBAction func login(_ sender: Any) {
         var username = usernamebox.text!
         var password = passwordbox.text!
@@ -36,8 +37,8 @@ class ViewStaffController: UIViewController {
             welcomescreen.isHidden = false
             Qbutton.isHidden = false
             Abutton.isHidden = false
-            
-            
+            postquestion.isHidden = false
+            passwordbox.resignFirstResponder()
         }
         
     }

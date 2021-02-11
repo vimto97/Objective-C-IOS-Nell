@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         let newUser = NSEntityDescription.insertNewObject(forEntityName: "Logins", into: context!) as! Logins
         newUser.username = username.text!
         newUser.password = password.text!
-        
+        password.resignFirstResponder()
      
         do {
              try context?.save()
@@ -107,7 +107,13 @@ class ViewController: UIViewController {
                  welcomeMessage.text = "You have logged out"
                  welcomeMessage.isHidden = false
                  logoutButton.isHidden = true
-                 
+                //
+                logo.isHidden = false
+                 username.isHidden = false
+                 password.isHidden = false
+                 loginBtn.isHidden = false
+                staff.isHidden = false
+                signuplabel.isHidden = false
              } catch {
                  print("there was an error")
              }
