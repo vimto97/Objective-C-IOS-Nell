@@ -1,11 +1,9 @@
 { "question": "What is the name of the project?",
-            "options": [
-                "Seb",
-                "Pen",
-                "Web",
-                "Nell"
-            ],
-            "answer": "Nell"
+    "options": {"A":"Seb",
+        "B":"Pen",
+        "C":"Web",
+        "D":"Nell"
+    },
+    "answer": "Nell"
 }
-
 

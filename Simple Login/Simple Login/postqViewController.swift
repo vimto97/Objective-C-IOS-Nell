@@ -8,29 +8,20 @@
 import UIKit
 import Foundation
 
+import FirebaseDatabase
+
 class postqViewController: UIViewController {
     
     @IBOutlet weak var textBox: UITextField!
     
 
-    let fileurl =  FileManager.default.urls(for: FileManager.SearchPathDirectory.cachesDirectory, in: FileManager.SearchPathDomainMask.userDomainMask).first!.appendingPathComponent("file.txt")
-    
-    
+
+
     @IBAction func submit(_ sender: Any) {
-        var question = textBox.text!
+        let question = textBox.text!
 
-        
-        do {
-            let fileHandle = try FileHandle(forWritingTo: fileurl)
-                fileHandle.seekToEndOfFile()
-                fileHandle.write(("\n\(question)").data(using: .utf8)!)
-            
-                fileHandle.closeFile()
-
-        } catch {
-            print("Error writing to file \(error)")
-        }
-
+        questionArray.append(question)
+        ref.child("questions/postQ").setValue(questionArray)
         createalert(title: "Submitted", message: "Sent to the student portal")
     }
     

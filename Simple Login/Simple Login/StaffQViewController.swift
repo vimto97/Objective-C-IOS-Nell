@@ -6,23 +6,27 @@
 //
 
 import UIKit
-var ask1 = [String]()
+var ask1 = ""
+
+
+import FirebaseDatabase
 class StaffQViewController: UIViewController {
     
     
     
     @IBOutlet weak var textboxAn: UITextField!
     @IBAction func submit(_ sender: Any) {
-        var question = textboxAn.text!
+        let question = textboxAn.text!
+        ask1 = question
+        ask10.append(ask1)
+        ref.child("questions/Student").setValue(ask10)
+        //childByAutoId().setValue(ask1)
         
-        
-        ask1.append(question)
-        //print(ask1)
            createalert(title: "Submitted", message: "Sent to the student portal")
         }
         
 
-        
+
         
         func createalert(title:String, message:String){
             let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
@@ -38,18 +42,9 @@ class StaffQViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

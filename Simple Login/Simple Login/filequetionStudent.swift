@@ -8,22 +8,16 @@
 
 import UIKit
 import Foundation
+import FirebaseDatabase
 var questionArray = [String]()
-let startWordsURL = Bundle.main.url(forResource: "file", withExtension: "txt")
 
 
+var name = ""
 
 class filequetionStudent: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var myTable: UITableView!
     
-    
-    
-
-    
-    
-    
-
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return questionArray.count
@@ -38,45 +32,22 @@ class filequetionStudent: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "touchfilequestion") as? touchfilequestion
+        self.navigationController?.pushViewController(vc!, animated: true)
+        name = questionArray[indexPath.row]
+    }
 
     override func viewDidLoad() {
-        //if (startWordsURL != nil) {
-        
-        if let startWords = try? String(contentsOf: startWordsURL!) {
-                
-                questionArray = startWords.components(separatedBy: "\n")
-                print(questionArray)
-            }
-        //}
+
         if questionArray.isEmpty {
             questionArray = ["No questions!"]
         }
 
         super.viewDidLoad()
         myTable.reloadData()
-        // Do any additional setup after loading the view.
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        if let startWords = try? String(contentsOf: startWordsURL!) {
-                
-                questionArray = startWords.components(separatedBy: "\n")
-            }
-        //}
-        if questionArray.isEmpty {
-            questionArray = ["No questions!"]
-        }
-        myTable.reloadData()
-    }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
+
 
 }

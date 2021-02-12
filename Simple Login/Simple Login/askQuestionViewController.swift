@@ -13,9 +13,10 @@ class askQuestionViewController: UIViewController {
     
     @IBAction func submit(_ sender: Any) {
         var question = textbox.text!
-               
+        
         ask2.append(question)
-       createalert(title: "Submitted", message: "Sent to the student portal")
+        ref.child("questions/Staff").setValue(ask2)
+       createalert(title: "Submitted", message: "Sent to Lecturer")
     }
     
 

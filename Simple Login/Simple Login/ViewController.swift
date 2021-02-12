@@ -8,9 +8,10 @@
 import UIKit
 import CoreData
 import LocalAuthentication
-
+import FirebaseDatabase
+var module = ""
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var staff: UIButton!
     @IBOutlet weak var signuplabel: UILabel!
     
@@ -39,6 +40,7 @@ class ViewController: UIViewController {
         let newUser = NSEntityDescription.insertNewObject(forEntityName: "Logins", into: context!) as! Logins
         newUser.username = username.text!
         newUser.password = password.text!
+        module = password.text!
         password.resignFirstResponder()
      
         do {
@@ -131,6 +133,26 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        ref.child("answersid/wrong").observe(DataEventType.value, with: { (snapshot) in
+          wrongAnswer = snapshot.value as! Int
+        })
+        ref.child("answersid/right").observe(DataEventType.value, with: { (snapshot) in
+          rightAnswer = snapshot.value as! Int
+        })
+        ref.child("questions/Student").child("0").observe(DataEventType.value, with: { (snapshot1) in
+        let data1 = snapshot1.value as! String
+        ask10.append(data1)
+        })
+        ref.child("questions/Staff").child("0").observe(DataEventType.value, with: { (snapshot) in
+        let data2 = snapshot.value as! String
+        ask2.append(data2)
+        })
+        ref.child("questions/postQ").child("0").observe(DataEventType.value, with: { (snapshot2) in
+        let data3 = snapshot2.value as! String
+        questionArray.append(data3)
+        })
+        
+
         super.viewDidLoad()
         // Do any additional setup after loading the view.
              context = appDelegate.persistentContainer.viewContext
@@ -187,6 +209,7 @@ class ViewController: UIViewController {
               } catch {
                   print("Couldn't fetch results")
               }
+        
         
           }
 
